@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎬 Fiche Film</title>
+
+  <!--  Intégration de Tailwind CSS depuis CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuration personnalisée de Tailwind (animations, polices, etc.) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'sans-serif'], // Définition de la police par défaut
+          },
+          animation: {
+            fade: 'fadeIn 1s ease-out', // Animation personnalisée "fadeIn"
+          },
+          keyframes: {
+            fadeIn: {
+              from: { opacity: 0 },
+              to: { opacity: 1 },
+            },
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<!--  Corps de la page avec arrière-plan en dégradé et texte blanc -->
+<body class="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] text-white min-h-screen font-sans">
+
+  <!--  En-tête avec titre animé et description -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-extrabold text-yellow-400 drop-shadow animate-fade">🎬 Fiche Film</h1>
+    <p class="text-slate-300 mt-2">Découvrez les détails du film sélectionné</p>
+  </header>
+
+  <main>
+    <!--  Conteneur principal où les données du film seront injectées par JavaScript -->
+    <section id="movie-data"
+      class="max-w-3xl mx-auto bg-[#1e1e2f] p-8 rounded-2xl shadow-2xl backdrop-blur-md bg-opacity-80 animate-fade">
+      <!-- Ce contenu sera remplacé dynamiquement -->
+      Chargement...
+    </section>
+  </main>
+
+  <!--  Pied de page avec lien vers l’API utilisée -->
+  <footer class="text-center mt-12 mb-6 m-slate-400 text-sm">
+    Propulsé par <a href="https://www.omdbapi.com/" class="underline hover:text-yellow-400">OMDb API</a>
+  </footer>
+
+  <!--  Script JS qui va injecter les données dynamiques du film -->
+  <script src="script.js"></script>
+</body>
+</html>
+

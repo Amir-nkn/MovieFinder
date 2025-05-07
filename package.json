@@ -1,0 +1,29 @@
+{
+  "name": "moviefinder",
+  "version": "1.0.0",
+  "description": "api for moviefinder",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+  "movie",
+  "OMDb",
+  "film",
+  "api",
+  "nodejs",
+  "express",
+  "json",
+  "public-api",
+  "movie-finder",
+  "tailwind"
+],
+  "author": "Amir",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "request": "^2.88.2"
+  }
+}
