@@ -114,7 +114,7 @@ http://localhost:3000/view?t=NomDuFilm
 
 ---
 
-### 6. Github :
+### Github :
 
 ```
 https://github.com/Amir-nkn/movieFinder
