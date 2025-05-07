@@ -114,4 +114,10 @@ http://localhost:3000/view?t=NomDuFilm
 
 ---
 
+### 6. Github :
+
+```
+https://github.com/Amir-nkn/movieFinder
+```
+
 _Projet réalisé dans le cadre du cours de programmation web avancée avec Marcos Sanches._
